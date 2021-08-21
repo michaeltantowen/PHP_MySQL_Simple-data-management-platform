@@ -12,4 +12,6 @@
 3. Search for ```xampp/htdocs/``` on your computer file explorer.
 4. Download or Clone this repository into the directory.
 5. Search for ```localhost/phpmyadmin``` on your browser to view the database management system on your computer.
-6. Search for ```localhost/PHP_MySQL_Data-Management-Platform``` from your browser to view the platform.
+6. Import database called ```student-database.sql``` that you get from this repository into your **phpmyadmin**<br />
+   [Click here if you don't know how to import database](https://help.one.com/hc/en-us/articles/115005588189-How-do-I-import-a-database-to-phpMyAdmin-).
+7. Search for ```localhost/PHP_MySQL_Data-Management-Platform``` from your browser to view the platform.
