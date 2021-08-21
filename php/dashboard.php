@@ -34,10 +34,6 @@ if(isset($_POST['add-student-data'])) {
   }
 }
 
-if(isset($_POST['search'])) {
-  $data = search($_POST["keyword"]);
-}
-
 if(isset($_POST['edit-student-data'])) {
   if(updateData($_POST) > 0) {
     header("Location: dashboard.php");
@@ -93,15 +89,15 @@ if(isset($_POST['logout'])) {
         <div class="input-group">
           <input type="text" name="keyword" id="keyword" class="form-control" placeholder="Search Student" autocomplete="off">
           <div class="input-group-append">
-            <button type="submit" name="search" class="input-group-text" style="cursor:pointer"><i class="fas fa-search"></i></button>
+            <div class="input-group-text"><i class="fas fa-search"></i></div>
           </div>
         </div>
       </form>
       <form action="" method="POST">
         <?php if($ascending == false) : ?>
-          <button type="submit" name="ascending" class="btn btn-info">Order By Ascending Order ^</button>
+          <button type="submit" id="ascending" name="ascending" class="btn btn-info">Order By Ascending Order ^</button>
         <?php elseif($descending == false) : ?>
-          <button type="submit" name="descending" class="btn btn-info">Order By Descending Order v</button>
+          <button type="submit" id="descending" name="descending" class="btn btn-info">Order By Descending Order v</button>
         <?php endif; ?>
       </form>
       <form action="" method="POST">

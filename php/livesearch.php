@@ -2,8 +2,6 @@
 
 require 'functions.php';
 
-echo "Hello, World!";q
-
 $keyword = $_GET['keyword'];
 
 $query = "SELECT * FROM student WHERE 

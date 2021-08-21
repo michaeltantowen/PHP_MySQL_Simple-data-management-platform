@@ -33,16 +33,6 @@ function postData($data) {
 
 }
 
-function search($keyword) {
-  $query = "SELECT * FROM student WHERE 
-    name LIKE '%$keyword%' OR
-    NIM LIKE '%$keyword%' OR
-    email LIKE '%$keyword%' OR
-    major LIKE '%$keyword%'
-  ";
-  return query($query);
-}
-
 function updateData($data) {
   global $conn;
   $id = $data['id'];
